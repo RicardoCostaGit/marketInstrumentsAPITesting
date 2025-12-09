@@ -44,3 +44,10 @@ test-output/
 *.zip
 *.tar.gz
 *.rar
+
+# Allure Reports
+.allure/
+allure-results/
+allure-report/
+target/allure-results/
+target/site/allure-maven-plugin/

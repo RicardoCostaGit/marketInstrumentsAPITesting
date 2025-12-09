@@ -1,0 +1,50 @@
+[
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000001",
+        "username": "john_trader",
+        "country": "US",
+        "balance": 50000.00
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000002",
+        "username": "maria_investor",
+        "country": "BR",
+        "balance": 75000.50
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000003",
+        "username": "chen_crypto",
+        "country": "CN",
+        "balance": 120000.00
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000004",
+        "username": "sarah_stocks",
+        "country": "GB",
+        "balance": 95000.75
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000005",
+        "username": "ahmed_forex",
+        "country": "AE",
+        "balance": 200000.00
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000006",
+        "username": "anna_options",
+        "country": "DE",
+        "balance": 45000.25
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000007",
+        "username": "raj_cfd",
+        "country": "IN",
+        "balance": 30000.00
+    },
+    {
+        "id": "22222222-aaaa-bbbb-cccc-000000000008",
+        "username": "broken_user",
+        "country": "XX",
+        "balance": -1000.00
+    }
+]

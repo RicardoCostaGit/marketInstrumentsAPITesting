@@ -1,0 +1,72 @@
+[
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000001",
+        "name": "Euro vs US Dollar",
+        "type": "FOREX",
+        "symbol": "EURUSD",
+        "price": 1.0943
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000002",
+        "name": "Bitcoin",
+        "type": "CRYPTO",
+        "symbol": "BTCUSD",
+        "price": 43210.55
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000003",
+        "name": "Ethereum",
+        "type": "CRYPTO",
+        "symbol": "ETHUSD",
+        "price": 3208.11
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000004",
+        "name": "Apple Inc.",
+        "type": "STOCK",
+        "symbol": "AAPL",
+        "price": 189.32
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000005",
+        "name": "Tesla Inc.",
+        "type": "STOCK",
+        "symbol": "TSLA",
+        "price": 242.61
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000006",
+        "name": "S&P 500 CFD",
+        "type": "CFD",
+        "symbol": "SPX500",
+        "price": 4861.2
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000007",
+        "name": "Gold CFD",
+        "type": "CFD",
+        "symbol": "XAUUSD",
+        "price": 2045.33
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000008",
+        "name": "Call Option - AAPL Feb 2025 200 Strike",
+        "type": "OPTION_CALL",
+        "symbol": "AAPL25FEB200C",
+        "price": 4.35
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000009",
+        "name": "Put Option - TSLA Feb 2025 220 Strike",
+        "type": "OPTION_PUT",
+        "symbol": "TSLA25FEB220P",
+        "price": 6.21
+    },
+    {
+        "id": "11111111-aaaa-bbbb-cccc-000000000010",
+        "name": "Broken Instrument (Negative Price)",
+        "type": "FOREX",
+        "symbol": "ERR001",
+        "price": -12.0
+    }
+]

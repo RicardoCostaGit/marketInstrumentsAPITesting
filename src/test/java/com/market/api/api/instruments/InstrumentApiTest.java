@@ -1,5 +1,7 @@
 package com.market.api.api.instruments;
 
+import io.qameta.allure.*;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,10 +14,12 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 /**
- * API tests for Instrument endpoints using RestAssured
+ * API tests for Instrument endpoints using RestAssured with Allure Reports
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DisplayName("Instrument API Tests")
+@Epic("Market Instruments API")
+@Feature("Instrument Management")
 class InstrumentApiTest {
 
     @LocalServerPort
@@ -25,10 +29,14 @@ class InstrumentApiTest {
     void setUp() {
         RestAssured.port = port;
         RestAssured.basePath = "/api/instruments";
+        RestAssured.filters(new AllureRestAssured());
     }
 
     @Test
     @DisplayName("GET /api/instruments - Should return all instruments")
+    @Story("Retrieve All Instruments")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verify that GET /api/instruments returns a list of all available instruments with valid data structure")
     void testGetAllInstruments() {
         given()
                 .contentType(ContentType.JSON)
@@ -47,6 +55,9 @@ class InstrumentApiTest {
 
     @Test
     @DisplayName("GET /api/instruments/{id} - Should return specific instrument")
+    @Story("Retrieve Instrument by ID")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verify that GET /api/instruments/{id} returns the correct instrument details for a valid ID")
     void testGetInstrumentById() {
         String instrumentId = "11111111-aaaa-bbbb-cccc-000000000002";
 
@@ -80,6 +91,9 @@ class InstrumentApiTest {
 
     @Test
     @DisplayName("POST /api/instruments - Should create new instrument")
+    @Story("Create New Instrument")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verify that POST /api/instruments successfully creates a new instrument with valid data")
     void testCreateInstrument() {
         String requestBody = """
                 {
